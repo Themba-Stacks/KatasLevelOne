@@ -1,16 +1,26 @@
-//combine two arrays
-let cars = (["Mercedes", "BMW", "Porche", "Koenigsegg"])
-let food = (["Eggs", "Burger", "Pizza", "Chocolate"])
-
-function AddArray (array1,array2){
-    var combinedArray = [];
-    array1.forEach((item, index) => {
-        combinedArray.push(item)
-        combinedArray.push(array2[index])
-    });
-    return combinedArray;
+//exercise hello
+function Hello(name) {
+    console.log("Hello "+name)
 }
-console.log(AddArray(cars,food))
+Hello("Shongi")
+
+//odd or even
+function evenOrOdd(num) {
+    if (num % 2 == 0) {
+        return "even"
+    } else {
+        return "odd"
+    }
+}
+console.log(evenOrOdd(11))
+
+//drawSquare
+function drawsquare(num) {
+    str="#"
+    strRow = str.repeat(num)+"\n"
+    return strRow.repeat(num);
+}
+console.log(drawsquare(5))
 
 //draw right triangle
 function rightAngleTriangle(num) {
@@ -22,20 +32,6 @@ function rightAngleTriangle(num) {
     }
 }
 rightAngleTriangle(4)
-
-//drawSquare
-function drawsquare(num) {
-    str="#"
-    strRow = str.repeat(num)+"\n"
-    return strRow.repeat(num);
-}
-console.log(drawsquare(5))
-
-//exercise hello
-function Hello(name) {
-    console.log("Hello "+name)
-}
-Hello("Shongi")
 
 //isoscles triangle
 
@@ -73,16 +69,19 @@ function longestString(array) {
     return longString
 }
 console.log(longestString(longest))
+//combine two arrays
+let cars = (["Mercedes", "BMW", "Porche", "Koenigsegg"])
+let food = (["Eggs", "Burger", "Pizza", "Chocolate"])
 
-//odd or even
-function evenOrOdd(num) {
-    if (num % 2 == 0) {
-        return "even"
-    } else {
-        return "odd"
-    }
+function AddArray (array1,array2){
+    var combinedArray = [];
+    array1.forEach((item, index) => {
+        combinedArray.push(item)
+        combinedArray.push(array2[index])
+    });
+    return combinedArray;
 }
-console.log(evenOrOdd(11))
+console.log(AddArray(cars,food))
 
 //word frame
 var frame = (["Write", "good", "code", "every", "day"])
@@ -110,3 +109,4 @@ function frameWithText(array) {
     console.log(hash.repeat(addedLength))
 }
 frameWithText(frame)
+
